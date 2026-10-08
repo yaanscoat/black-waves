@@ -4,7 +4,7 @@ A cool, clean looking customizable ubg web-proxy.
 [![Join the Discord](https://invidget.switchblade.xyz/Un24M9gnpN)](https://discord.gg/Un24M9gnpN)
 
 >[!NOTE]
->Black-waves is in it's early stages, let us know if you encounter any bugs!
+>Black-waves is in it's early stages, let us know if you encounter any bugs! btw, this is using Ultraviolet, until we change it to Scramjet things may get slow as Ultraviolet support is slowly declining
 
 ## Supported Sites:
 
