@@ -25,12 +25,9 @@ A cool, clean looking customizable ubg web-proxy.
 
 ## Credits
 
-- [selenite](https://selenite.cc/) - game source
-- [gn-math](https://github.com/gn-math/gn-math.github.io/) - game source
-- [edurocks](https://edurocks.org/) - game source
-- [velara](https://velara.cc/) - game source
+- [gmshelf](https://github.com/gmshelf/ckv) - game source
 - [titanium network](https://github.com/titaniumnetwork-dev/ultraviolet/) - ultraviolet
-- [mercury workshop](https://github.com/mercuryworkshop/) - scramjet, epoxy, and libcurl
+- [mercury-workshop](https://github.com/mercuryworkshop) - epoxy, bare, libcurl and wisp
 
 ## Usage:
 
