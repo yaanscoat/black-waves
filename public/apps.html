@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>try{document.documentElement.dataset.theme=JSON.parse(localStorage.getItem("bw:theme"))||"midnight"}catch(e){document.documentElement.dataset.theme="midnight"}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#030304">
+  <meta property="og:site_name" content="Blackwaves">
+  <meta property="og:image" content="/assets/img/icon-512.png">
+  <link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml">
+  <link rel="alternate icon" href="/favicon.ico?v=3">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png?v=3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400&display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <title>Apps | Blackwaves</title>
+  <meta name="description" content="Your favorite sites, one click away on Blackwaves.">
+  <meta property="og:title" content="Apps | Blackwaves">
+  <meta property="og:description" content="Your favorite sites, one click away on Blackwaves.">
+
+</head>
+<body data-page="apps">
+  <main class="page">
+    <div class="page-head">
+      <div>
+        <h1>Apps</h1>
+        <p>Your favorite sites, one click away.</p>
+      </div>
+      <div class="toolbar">
+        <div class="field">
+          <svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#magnifying-glass"/></svg>
+          <input class="input" id="apps-search" type="search" placeholder="Search apps" autocomplete="off" aria-label="Search apps">
+        </div>
+      </div>
+    </div>
+    <div class="grid" id="apps-grid"></div>
+  </main>
+  <script src="/baremux/index.js"></script>
+  <script src="/uv/uv.bundle.js"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script src="/assets/js/core.js"></script>
+  <script src="/assets/js/atmosphere.js"></script>
+  <script src="/assets/js/proxy.js"></script>
+  <script src="/assets/js/apps.js"></script>
+</body>
+</html>

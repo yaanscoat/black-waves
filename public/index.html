@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>try{document.documentElement.dataset.theme=JSON.parse(localStorage.getItem("bw:theme"))||"midnight"}catch(e){document.documentElement.dataset.theme="midnight"}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#030304">
+  <meta property="og:site_name" content="Blackwaves">
+  <meta property="og:image" content="/assets/img/icon-512.png">
+  <link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml">
+  <link rel="alternate icon" href="/favicon.ico?v=3">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png?v=3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400&display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <title>Blackwaves</title>
+  <meta name="description" content="Blackwaves. Browse freely and play hundreds of games.">
+  <meta property="og:title" content="Blackwaves">
+  <meta property="og:description" content="Blackwaves. Browse freely and play hundreds of games.">
+
+</head>
+<body data-page="home">
+  <main class="home">
+    <img class="home-mark" src="/assets/img/mark.svg" alt="">
+    <p class="greeting" id="greeting"></p>
+    <h1 class="wordmark">blackwaves</h1>
+    <p class="tagline">Browse freely. Play anything.</p>
+    <form class="home-search" id="home-search" role="search">
+      <div class="field">
+        <svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#magnifying-glass"/></svg>
+        <input class="input" id="home-query" type="text" placeholder="Search the web or enter a URL" autocomplete="off" spellcheck="false" aria-label="Search the web or enter a URL" autofocus>
+        <button class="engine" type="button" id="engine-label" title="Change search engine"></button>
+      </div>
+    </form>
+    <div class="quick">
+      <a class="btn" href="/games"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#gamepad"/></svg> Games</a>
+      <a class="btn" href="/apps"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#grip"/></svg> Apps</a>
+      <a class="btn" href="https://discord.gg/Un24M9gnpN" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#discord"/></svg> Discord</a>
+    </div>
+  </main>
+  <div class="status-chip" id="status-chip"><span class="dot"></span><span>Connecting&hellip;</span></div>
+  <script src="/baremux/index.js"></script>
+  <script src="/uv/uv.bundle.js"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script src="/assets/js/core.js"></script>
+  <script src="/assets/js/atmosphere.js"></script>
+  <script src="/assets/js/proxy.js"></script>
+  <script src="/assets/js/home.js"></script>
+</body>
+</html>
