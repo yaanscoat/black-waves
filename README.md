@@ -14,10 +14,9 @@ A cool, clean looking customizable ubg web-proxy.
 - [Google](https://google.com)
 - [Spotify](https://spotify.com)
 - [Discord](https://discord.com)
-- [Youtube](https://www.youtube.com)
 - [Reddit](https://reddit.com)
 - [GeForce NOW](https://play.geforcenow.com/)
-- [Now.gg](https://now.gg)
+- [Tiktok](https://tiktok.com)
 
 ## Features:
 
