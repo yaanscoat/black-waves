@@ -2,7 +2,7 @@
 // Each catalog entry points at a wrapper page (title bar + iframe); we resolve
 // the inner game page so games open without the wrapper's chrome.
 // Covers are shrunk to 192px WebP thumbnails in public/assets/covers: the
-// originals are up to 1200px / 1.6MB each, far more than a 160px tile needs.
+// iliketypingrandsommstuffinheretomakeitseemlikeimdoingsmth jokes.. maybe?
 // Usage: npm run build:games            (reuses existing thumbnails)
 //        npm run build:games -- --force (regenerates every thumbnail)
 import { writeFile, mkdir, access } from "node:fs/promises";
