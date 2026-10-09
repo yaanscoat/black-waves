@@ -1,21 +1,30 @@
-MIT License
+blackwaves LICNESE-1.0
 
-Copyright (c) 2026 yaanscoat
+Copyright (c) 2026 Blackwaves
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Permission
+Permission is hereby granted, free of charge, to any person obtaining a copy of the Blackwaves Web Proxy software and associated documentation files (the "Software"), to use, reproduce, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, subject to the conditions set forth in this license.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+2. Conditions
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+Redistributions and modified versions of the Software must not misrepresent their origin or claim to be official releases of Blackwaves without authorization.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+3. Third-Party Components
+The Software may incorporate, depend on, or interact with third-party software and technologies, including but not limited to:
+
+Scramjet
+Ultraviolet
+libcurl
+Epoxy
+Other open-source libraries, frameworks, and dependencies
+Such components remain subject to their respective copyright notices, licenses, and terms. This license does not replace, override, or grant rights beyond those provided by the applicable licenses of third-party components.
+
+Recipients are responsible for reviewing and complying with the licenses applicable to those components.
+
+4. Disclaimer of Warranty
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS, COPYRIGHT HOLDERS, OR BLACKWAVES BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+5. Acceptable Use
+The Software is a general-purpose web-proxy technology. Users are responsible for ensuring that their use of the Software complies with applicable laws, regulations, network policies, and the terms of service of the websites and services they access.
+Blackwaves does not authorize or endorse unlawful access, unauthorized circumvention of security controls, or infringement of third-party rights.
