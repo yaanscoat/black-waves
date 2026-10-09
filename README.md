@@ -6,6 +6,9 @@ A cool, clean looking customizable ubg web-proxy.
 >[!NOTE]
 >Black-waves is in it's early stages, let us know if you encounter any bugs! btw, this is using Ultraviolet, until we change it to Scramjet things may get slow as Ultraviolet support is slowly declining
 
+>[!IMPORTANT]
+>Consider giving the repository a start if you're gonna fork it! <3
+
 ## Supported Sites:
 
 - [Google](https://google.com)
@@ -50,7 +53,4 @@ sh setup.sh
 
 ## License
 
-This project is licensed under the [MIT](LICENSE).
-
-> [!IMPORTANT]
-> Considering giving this repository a star if you do fork and use Black-waves. :)
+This project is licensed under the [blackwaves LICENSE-1.0](LICENSE).
