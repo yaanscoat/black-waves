@@ -12,39 +12,12 @@ A clean, heavily customisable UBG-style web proxy — with games, movies and a s
 
 ---
 
-## What's in it
+## Feautures
 
-**The proxy**
-
-- **Scramjet** engine by default (Ultraviolet still available as a fallback) — switchable per-session in Settings.
-- **libcurl** transport by default (Epoxy as fallback). Both are picked at runtime through bare-mux, so switching needs no rebuild.
-- Scramjet's own service worker lives at `/scramsw.js`, separate from Ultraviolet's `/sw.js`, so both engines can be registered at once and swapped without a reload.
-- If Scramjet can't start in a given browser, the proxy falls back to Ultraviolet on its own instead of leaving you dead in the water.
-- Connection watchdog: it needs two failed pings before it reports an outage, and the server heartbeats on the protocol level, so transient blips no longer read as "disconnected".
-
-**Appearance**
-
-- **40 themes**, **9 glass recipes** (Clear, Frosted, Liquid, Matte, Holographic, Prism, Neumorph, Gel, Minimal) and **11 tints**.
-- **Custom backgrounds** — upload an image or point at one on the web, with an optional extra dim.
-- Every background effect (light beams, dust motes, glass sheen, pointer highlight, backdrop blur) can be switched off individually.
-- **Low RAM mode** trims blur, the dust canvas and animated sheens. Defaults on for light devices.
-- Tap the logo on the homepage for confetti. There's no cooldown — click it as fast as you like.
-
-**Games**
-
-- Two switchable providers: the **[CKV collection](https://github.com/gmshelf/ckv)** (837 games) and **[GN-Math](https://github.com/gn-math)** (800+ games).
-- The grid is virtualised: only the rows near the viewport are ever in the DOM, which is what keeps an 800-title library from costing hundreds of megabytes.
-
-**Movies**
-
-- Six rails — Trending, Hollywood, Bollywood, Kids, Cartoons and Anime — baked at build time from TMDB.
-- Live search against TMDB for anything that isn't on the shelves.
-- Playback through [vidsrc.sh](https://vidsrc.sh), inside the proxy frame.
-
-**Browser**
-
-- A sidebar-tab browser with up to six tabs, back/forward/reload and Ctrl/Cmd+T / Ctrl/Cmd+W.
-- Background tabs are *discarded* after a minute — the iframe is torn out of the document entirely and rebuilt when you come back — so half a dozen open sites cost roughly what one page does.
+- Slick glass UI
+- Fast proy and transport
+- The tuffest UBG web proxy to exist
+- SO MUCH MORE DAWG
 
 ---
 
@@ -61,7 +34,7 @@ A clean, heavily customisable UBG-style web proxy — with games, movies and a s
 
 ## Running it
 
-Requires **Node 20.12+** and **npm 7+**.
+Requires latest version of node/npm or bun.
 
 ```bash
 git clone https://github.com/yaanscoat/black-waves
@@ -72,24 +45,12 @@ npm start          # http://localhost:3000
 
 `npm run dev` runs it under nodemon.
 
-### Scripts
-
-| Command | What it does |
-| --- | --- |
-| `npm start` | Run the server |
-| `npm run dev` | Run the server with auto-reload |
-| `npm run build:games` | Rebuild `assets/data/games.json` from the CKV repo |
-| `npm run build:movies` | Rebuild `assets/data/movies.json` from the TMDB API |
-| `npm run build:static` | Produce a backend-free build in `dist/` |
-| `npm run bump` | Fold five changelog entries into a release and bump the patch version |
-
----
-
 ## Deploying
 
-### Self-hosted (Linux)
+>[!WARNING]
+>Blackwaves can now be deployed on static hosting websites!
 
-The setup script installs Node, Caddy and PM2, writes a Caddyfile that proxies `:443` to the app on `:3000`, and sets up a git auto-updater.
+### Self-hosted (Linux)
 
 ```bash
 CADDY_EMAIL=you@example.com sh setup.sh
