@@ -39,6 +39,8 @@ You **cannot** deploy Black-waves on static hosting services. This includes Neti
 
 Black-waves is simple to self-host.
 
+
+--linux-only---
 1. Open your terminal.
 2. Run the commands bellow:
    
@@ -47,7 +49,18 @@ git clone https://github.com/yaanscoat/black-waves
 
 cd black-waves
 
-sh setup.sh
+sh setup.sh      #setup script runs server on https://localhost:8080
+```
+
+---windows-or-mac---
+
+```sh
+git clone https://github.com/yaanscoat/black-waves
+
+cd black-waves
+
+bun i      #bun install script
+bun run    #run the server on https://localhost:8080
 ```
 
 ## License
