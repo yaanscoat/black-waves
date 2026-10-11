@@ -25,7 +25,7 @@ separator() {
 clear
 
 highlight "  ~~~  ~~~  ~~~  ~~~  ~~~  ~~~  ~~~  ~~~"
-highlight "   b l a c k w a v e s"
+highlight "   blackwaves shell madafada"
 highlight "  ~~~  ~~~  ~~~  ~~~  ~~~  ~~~  ~~~  ~~~"
 
 separator
