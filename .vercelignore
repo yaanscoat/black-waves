@@ -1,0 +1,6 @@
+# Only index.mjs and its dependencies need to reach Vercel; everything here is
+# either build output or reference material.
+dist/
+waves-prod/
+node_modules/
+README.md

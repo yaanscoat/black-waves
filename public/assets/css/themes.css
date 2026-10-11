@@ -1,0 +1,134 @@
+/* Blackwaves appearance layer: 40 themes, glass recipes and tints.
+   Loaded after main.css so these blocks win over its :root defaults.
+   Every theme only recolours --bg (page), --light (beams/dust) and the
+   glass tint; the layout lives in main.css. */
+
+/* ---------- Themes (40) ---------- */
+[data-theme="midnight"]   { --bg: #020203; --light: 226, 233, 255; --glass: rgba(255, 255, 255, 0.065); --glass-edge: rgba(255, 255, 255, 0.14); }
+[data-theme="ocean"]      { --bg: #01060c; --light: 140, 205, 255; --glass: rgba(150, 200, 255, 0.07); --glass-edge: rgba(170, 215, 255, 0.17); }
+[data-theme="aurora"]     { --bg: #010806; --light: 150, 255, 205; --glass: rgba(150, 255, 210, 0.06); --glass-edge: rgba(170, 255, 220, 0.16); }
+[data-theme="ember"]      { --bg: #070302; --light: 255, 196, 130; --glass: rgba(255, 200, 150, 0.065); --glass-edge: rgba(255, 210, 170, 0.16); }
+[data-theme="sakura"]     { --bg: #070205; --light: 255, 176, 214; --glass: rgba(255, 180, 215, 0.065); --glass-edge: rgba(255, 195, 225, 0.17); }
+[data-theme="violet"]     { --bg: #04020c; --light: 195, 170, 255; --glass: rgba(190, 170, 255, 0.07); --glass-edge: rgba(205, 190, 255, 0.17); }
+[data-theme="crimson"]    { --bg: #080103; --light: 255, 120, 130; --glass: rgba(255, 110, 125, 0.07); --glass-edge: rgba(255, 140, 150, 0.18); }
+[data-theme="cyberpunk"]  { --bg: #05010a; --light: 255, 90, 220; --glass: rgba(255, 60, 210, 0.075); --glass-edge: rgba(255, 110, 230, 0.2); }
+[data-theme="neon"]       { --bg: #010505; --light: 80, 255, 215; --glass: rgba(70, 255, 210, 0.07); --glass-edge: rgba(110, 255, 225, 0.19); }
+[data-theme="solar"]      { --bg: #060401; --light: 255, 230, 120; --glass: rgba(255, 225, 110, 0.07); --glass-edge: rgba(255, 235, 150, 0.18); }
+[data-theme="forest"]     { --bg: #020604; --light: 140, 255, 165; --glass: rgba(130, 255, 160, 0.065); --glass-edge: rgba(160, 255, 185, 0.17); }
+[data-theme="lavender"]   { --bg: #05040a; --light: 214, 196, 255; --glass: rgba(205, 190, 255, 0.075); --glass-edge: rgba(220, 208, 255, 0.19); }
+[data-theme="rose"]       { --bg: #070204; --light: 255, 150, 175; --glass: rgba(255, 140, 170, 0.07); --glass-edge: rgba(255, 170, 195, 0.18); }
+[data-theme="arctic"]     { --bg: #020406; --light: 215, 244, 255; --glass: rgba(210, 240, 255, 0.06); --glass-edge: rgba(225, 248, 255, 0.17); }
+[data-theme="magma"]      { --bg: #070201; --light: 255, 155, 75; --glass: rgba(255, 145, 65, 0.075); --glass-edge: rgba(255, 175, 115, 0.19); }
+[data-theme="jade"]       { --bg: #010605; --light: 110, 255, 225; --glass: rgba(100, 255, 220, 0.065); --glass-edge: rgba(140, 255, 235, 0.18); }
+[data-theme="indigo"]     { --bg: #03030a; --light: 150, 165, 255; --glass: rgba(140, 155, 255, 0.075); --glass-edge: rgba(170, 185, 255, 0.19); }
+[data-theme="peach"]      { --bg: #070403; --light: 255, 205, 185; --glass: rgba(255, 200, 175, 0.07); --glass-edge: rgba(255, 220, 200, 0.18); }
+[data-theme="mint"]       { --bg: #010705; --light: 170, 255, 225; --glass: rgba(160, 255, 220, 0.065); --glass-edge: rgba(190, 255, 235, 0.18); }
+[data-theme="gold"]       { --bg: #060502; --light: 255, 215, 130; --glass: rgba(255, 205, 110, 0.075); --glass-edge: rgba(255, 225, 160, 0.2); }
+[data-theme="steel"]      { --bg: #020304; --light: 190, 205, 220; --glass: rgba(185, 200, 215, 0.06); --glass-edge: rgba(205, 220, 235, 0.16); }
+[data-theme="plum"]       { --bg: #060206; --light: 230, 170, 255; --glass: rgba(225, 155, 255, 0.07); --glass-edge: rgba(240, 190, 255, 0.19); }
+[data-theme="citrus"]     { --bg: #060601; --light: 235, 255, 120; --glass: rgba(230, 255, 105, 0.07); --glass-edge: rgba(245, 255, 150, 0.19); }
+[data-theme="tide"]       { --bg: #010407; --light: 130, 225, 255; --glass: rgba(120, 215, 255, 0.07); --glass-edge: rgba(160, 232, 255, 0.18); }
+[data-theme="orchid"]     { --bg: #05020a; --light: 255, 155, 245; --glass: rgba(255, 140, 240, 0.07); --glass-edge: rgba(255, 180, 250, 0.19); }
+[data-theme="copper"]     { --bg: #060302; --light: 255, 180, 145; --glass: rgba(255, 170, 130, 0.07); --glass-edge: rgba(255, 200, 175, 0.18); }
+[data-theme="glacier"]    { --bg: #020508; --light: 200, 235, 255; --glass: rgba(190, 230, 255, 0.06); --glass-edge: rgba(215, 245, 255, 0.17); }
+[data-theme="moss"]       { --bg: #030503; --light: 205, 255, 155; --glass: rgba(195, 255, 145, 0.065); --glass-edge: rgba(220, 255, 180, 0.18); }
+[data-theme="bubblegum"]  { --bg: #070206; --light: 255, 170, 235; --glass: rgba(255, 155, 230, 0.075); --glass-edge: rgba(255, 190, 245, 0.19); }
+[data-theme="aqua"]       { --bg: #000607; --light: 110, 255, 255; --glass: rgba(95, 255, 255, 0.065); --glass-edge: rgba(140, 255, 255, 0.18); }
+[data-theme="sunset"]     { --bg: #06030a; --light: 255, 175, 125; --glass: rgba(255, 165, 120, 0.07); --glass-edge: rgba(255, 195, 160, 0.18); }
+[data-theme="bloodmoon"]  { --bg: #070102; --light: 255, 95, 95; --glass: rgba(255, 85, 85, 0.075); --glass-edge: rgba(255, 130, 130, 0.2); }
+[data-theme="cobalt"]     { --bg: #010308; --light: 115, 165, 255; --glass: rgba(105, 155, 255, 0.075); --glass-edge: rgba(145, 185, 255, 0.19); }
+[data-theme="sand"]       { --bg: #060504; --light: 245, 225, 195; --glass: rgba(240, 220, 185, 0.06); --glass-edge: rgba(250, 238, 215, 0.17); }
+[data-theme="eclipse"]    { --bg: #030305; --light: 185, 185, 255; --glass: rgba(170, 170, 255, 0.07); --glass-edge: rgba(200, 200, 255, 0.18); }
+[data-theme="lagoon"]     { --bg: #010607; --light: 135, 255, 235; --glass: rgba(125, 255, 230, 0.065); --glass-edge: rgba(165, 255, 242, 0.18); }
+[data-theme="ruby"]       { --bg: #070103; --light: 255, 110, 145; --glass: rgba(255, 100, 140, 0.07); --glass-edge: rgba(255, 145, 175, 0.19); }
+[data-theme="space"]      { --bg: #020207; --light: 205, 205, 255; --glass: rgba(195, 195, 255, 0.065); --glass-edge: rgba(220, 220, 255, 0.17); }
+[data-theme="noir"]       { --bg: #030303; --light: 232, 232, 232; --glass: rgba(255, 255, 255, 0.055); --glass-edge: rgba(255, 255, 255, 0.13); }
+[data-theme="halo"]       { --bg: #030407; --light: 238, 243, 255; --glass: rgba(235, 240, 255, 0.07); --glass-edge: rgba(245, 248, 255, 0.2); }
+
+/* ---------- Tints ---------- */
+/* A tint re-colours every glass surface without touching the theme's
+   background or light. Applied after themes so it wins the cascade. */
+[data-tint="white"]   { --glass: rgba(255, 255, 255, 0.065); --glass-hover: rgba(255, 255, 255, 0.11); --glass-edge: rgba(255, 255, 255, 0.15); --glass-edge-strong: rgba(255, 255, 255, 0.28); }
+[data-tint="blue"]    { --glass: rgba(96, 152, 255, 0.085); --glass-hover: rgba(96, 152, 255, 0.14); --glass-edge: rgba(130, 175, 255, 0.24); --glass-edge-strong: rgba(160, 195, 255, 0.4); }
+[data-tint="purple"]  { --glass: rgba(158, 112, 255, 0.085); --glass-hover: rgba(158, 112, 255, 0.14); --glass-edge: rgba(185, 150, 255, 0.24); --glass-edge-strong: rgba(205, 175, 255, 0.4); }
+[data-tint="pink"]    { --glass: rgba(255, 110, 190, 0.085); --glass-hover: rgba(255, 110, 190, 0.14); --glass-edge: rgba(255, 150, 210, 0.24); --glass-edge-strong: rgba(255, 180, 225, 0.4); }
+[data-tint="red"]     { --glass: rgba(255, 92, 92, 0.085); --glass-hover: rgba(255, 92, 92, 0.14); --glass-edge: rgba(255, 130, 130, 0.24); --glass-edge-strong: rgba(255, 165, 165, 0.4); }
+[data-tint="orange"]  { --glass: rgba(255, 158, 64, 0.085); --glass-hover: rgba(255, 158, 64, 0.14); --glass-edge: rgba(255, 185, 110, 0.24); --glass-edge-strong: rgba(255, 205, 150, 0.4); }
+[data-tint="yellow"]  { --glass: rgba(255, 220, 90, 0.08); --glass-hover: rgba(255, 220, 90, 0.13); --glass-edge: rgba(255, 232, 140, 0.24); --glass-edge-strong: rgba(255, 242, 185, 0.4); }
+[data-tint="green"]   { --glass: rgba(88, 230, 140, 0.08); --glass-hover: rgba(88, 230, 140, 0.13); --glass-edge: rgba(130, 245, 175, 0.24); --glass-edge-strong: rgba(175, 255, 210, 0.4); }
+[data-tint="teal"]    { --glass: rgba(70, 230, 220, 0.08); --glass-hover: rgba(70, 230, 220, 0.13); --glass-edge: rgba(115, 245, 238, 0.24); --glass-edge-strong: rgba(165, 255, 250, 0.4); }
+[data-tint="black"]   { --glass: rgba(0, 0, 0, 0.32); --glass-hover: rgba(0, 0, 0, 0.46); --glass-edge: rgba(255, 255, 255, 0.12); --glass-edge-strong: rgba(255, 255, 255, 0.24); --glass-strong: rgba(10, 10, 12, 0.72); }
+
+/* ---------- Glass recipes ---------- */
+/* Selected with data-glass on <html>. Each one reshapes the shared glass
+   variables plus the sheen animation, so surfaces inherit the whole look. */
+[data-glass="frosted"] {
+  --glass-blur: blur(30px) saturate(210%) brightness(1.12);
+  --glass: rgba(255, 255, 255, 0.1);
+  --glass-strong: rgba(26, 28, 38, 0.62);
+  --glass-shine: inset 0 1px 0.5px rgba(255, 255, 255, 0.4), inset 0 -1px 0.5px rgba(255, 255, 255, 0.08), inset 0 0 24px rgba(255, 255, 255, 0.05);
+}
+[data-glass="liquid"] {
+  --glass-blur: blur(14px) saturate(240%) brightness(1.15);
+  --glass: rgba(255, 255, 255, 0.085);
+  --glass-shine: inset 0 1.5px 1px rgba(255, 255, 255, 0.5), inset 0 -1.5px 1px rgba(255, 255, 255, 0.1), inset 0 0 26px rgba(255, 255, 255, 0.07);
+  --glass-drop: 0 18px 48px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+[data-glass="matte"] {
+  --glass-blur: blur(26px) saturate(120%) brightness(1);
+  --glass: rgba(30, 32, 40, 0.5);
+  --glass-hover: rgba(44, 47, 57, 0.6);
+  --glass-shine: inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+[data-glass="holographic"] {
+  --glass-blur: blur(20px) saturate(260%) brightness(1.14);
+  --glass: rgba(255, 255, 255, 0.075);
+  --glass-shine: inset 0 1px 0.5px rgba(255, 255, 255, 0.42), inset 0 -1px 0.5px rgba(255, 255, 255, 0.1), inset 0 0 26px rgba(160, 220, 255, 0.1), inset 0 0 26px rgba(255, 160, 235, 0.08);
+}
+[data-glass="minimal"] {
+  --glass-blur: blur(8px) saturate(110%);
+  --glass: rgba(255, 255, 255, 0.035);
+  --glass-hover: rgba(255, 255, 255, 0.07);
+  --glass-shine: none;
+  --glass-drop: 0 6px 18px rgba(0, 0, 0, 0.35);
+  --glass-edge: rgba(255, 255, 255, 0.1);
+}
+[data-glass="neumorph"] {
+  --glass-blur: blur(16px) saturate(140%);
+  --glass: rgba(255, 255, 255, 0.055);
+  --glass-shine: inset 2px 2px 6px rgba(0, 0, 0, 0.45), inset -2px -2px 6px rgba(255, 255, 255, 0.07);
+  --glass-drop: 6px 6px 18px rgba(0, 0, 0, 0.5), -6px -6px 18px rgba(255, 255, 255, 0.045);
+}
+[data-glass="gel"] {
+  --glass-blur: blur(12px) saturate(300%) brightness(1.18);
+  --glass: rgba(255, 255, 255, 0.115);
+  --glass-hover: rgba(255, 255, 255, 0.17);
+  --glass-shine: inset 0 2px 2px rgba(255, 255, 255, 0.5), inset 0 -3px 4px rgba(255, 255, 255, 0.12);
+  --glass-drop: 0 14px 34px rgba(0, 0, 0, 0.42), inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+}
+[data-glass="prism"] {
+  --glass-blur: blur(18px) saturate(220%) brightness(1.1);
+  --glass: rgba(255, 255, 255, 0.07);
+  --glass-shine: inset 0 1px 0.5px rgba(255, 255, 255, 0.4), inset 0 0 30px rgba(255, 255, 255, 0.05);
+}
+/* Prism/holographic get a slow rainbow sweep on top of the normal sheen. */
+[data-glass="holographic"] .topbar,
+[data-glass="holographic"] .btn,
+[data-glass="holographic"] .drawer,
+[data-glass="prism"] .topbar,
+[data-glass="prism"] .drawer {
+  background-image:
+    radial-gradient(120px circle at var(--mx) var(--my), rgba(255, 255, 255, calc(0.18 * var(--spec))), transparent 70%),
+    linear-gradient(115deg, rgba(255, 90, 160, 0.14), rgba(90, 190, 255, 0.14) 35%, rgba(255, 235, 120, 0.12) 70%, rgba(160, 120, 255, 0.14));
+  background-size: 100% 100%, 300% 100%;
+  animation: prism-sweep 12s linear infinite;
+}
+@keyframes prism-sweep {
+  0% { background-position: 0 0, 0% 0; }
+  100% { background-position: 0 0, 300% 0; }
+}
+/* Holo/prism surfaces keep their rainbow even in low-fx mode (it is cheap). */
+[data-glass="holographic"].low-fx .topbar,
+[data-glass="holographic"].low-fx .drawer,
+[data-glass="prism"].low-fx .topbar,
+[data-glass="prism"].low-fx .drawer { background-color: rgba(24, 26, 33, 0.9); }
