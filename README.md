@@ -138,6 +138,16 @@ The bump rewrites `changelog.json`, `package.json` and the `VERSION` constant in
 - [TMDB](https://www.themoviedb.org/) — movie metadata
 - [Font Awesome Free](https://fontawesome.com/) — icons (CC BY 4.0)
 
+## Star History
+
+<a href="https://www.star-history.com/?repos=yaanscoat%2Fblack-waves&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=yaanscoat/black-waves&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=yaanscoat/black-waves&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=yaanscoat/black-waves&type=date&legend=top-left" />
+ </picture>
+</a>
+
 ## License
 
 This project is licensed under the [Blackwaves LICENSE-1.0](LICENSE).
