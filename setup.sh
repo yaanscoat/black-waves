@@ -1,5 +1,5 @@
 #!/bin/bash
-# Blackwaves server setup for Debian/Ubuntu.
+# Blackwaves server setup for Debian or Ubuntu based distros including both.
 # Usage: CADDY_EMAIL=you@example.com sh setup.sh
 
 info() {
@@ -29,7 +29,7 @@ highlight "   blackwaves shell madafada"
 highlight "  ~~~  ~~~  ~~~  ~~~  ~~~  ~~~  ~~~  ~~~"
 
 separator
-info "Starting the setup process..."
+info "shell startup!"
 separator
 
 if [ -z "$CADDY_EMAIL" ]; then
