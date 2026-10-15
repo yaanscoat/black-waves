@@ -39,7 +39,7 @@ app.disable("x-powered-by");
 app.set("trust proxy", process.env.VERCEL ? true : "loopback");
 // 512 B rather than the 1 KB default. The shell of every page is a few hundred
 // bytes of HTML and CSS, and not compressing those costs a round trip's worth of
-// latency for almost nothing in CPU.
+// barley any CPU latency
 app.use(compression({ threshold: 512 }));
 
 app.use("/baremux/", express.static(baremuxPath));
