@@ -137,6 +137,7 @@ The bump rewrites `changelog.json`, `package.json` and the `VERSION` constant in
 - [vidsrc.sh](https://vidsrc.sh) — movie and TV playback
 - [TMDB](https://www.themoviedb.org/) — movie metadata
 - [Font Awesome Free](https://fontawesome.com/) — icons (CC BY 4.0)
+- [gayq](https:/[/github.com/gayq) - the icon. ik i should have made my own but this looks so peak bro.
 
 ## Star History
 
