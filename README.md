@@ -1,4 +1,4 @@
-# Black-waves
+# blackwaves
 
 A clean, heavily customisable UBG-style web proxy — with games, movies and a sidebar browser on top.
 
@@ -48,7 +48,7 @@ npm start          # http://localhost:3000
 ## Deploying
 
 >[!WARNING]
->Blackwaves can now be deployed on static hosting websites!
+>blackwaves can now be deployed on static hosting websites!
 
 ### Self-hosted (Linux)
 
