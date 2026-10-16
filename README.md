@@ -97,22 +97,6 @@ PUBLIC_ORIGIN=/blackwaves          npm run build:static   # deployed under a sub
 
 ---
 
-## Configuration
-
-`public/assets/js/config.js` is the single runtime config, and `build:static` rewrites it in the output:
-
-```js
-window.BW_CONFIG = {
-  static: false,                  // true on static builds
-  wisp: null,                     // null = this origin's own /w/
-  publicWisp: "wss://wisp.mercurywork.shop/",
-};
-```
-
-The movie catalogue is generated at build time by `scripts/build-movies.mjs`. It reads `TMDB_API_KEY` from the environment and falls back to a built-in key if that's unset. The key is a public, read-only one and it does ship to the browser so the search box can query TMDB live — swap in your own if you'd rather.
-
----
-
 ## Versioning
 
 Black-waves is at **v0.1.0**. The changelog lives in *Settings → About*, backed by `public/assets/data/changelog.json`.
